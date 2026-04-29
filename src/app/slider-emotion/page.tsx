@@ -1,25 +1,16 @@
 'use client';
-import { styled } from '@mui/material/styles';
-import Header from '@mui/material/Header';
-// import AppTheme from '@/theme';
 import { SliderEmotion as Slider } from '@mui/material/Slider';
-
-const StyledHeader = styled(Header)({
-  backgroundColor: 'blue',
-  color: 'white',
-});
 
 const arr = Array.from({ length: 500 });
 
 const iOSBoxShadow =
   '0 3px 1px rgba(0,0,0,0.1),0 4px 8px rgba(0,0,0,0.13),0 0 0 1px rgba(0,0,0,0.02)';
-  
+
 export default function Home() {
   return (
     <>
     {arr.map((_, index) => (
       <Slider key={index} defaultValue={30} aria-label="Default" valueLabelDisplay="auto" sx={(theme) => ({
-
         color: '#007bff',
         height: 5,
         padding: '15px 0',

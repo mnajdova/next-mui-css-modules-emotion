@@ -1,13 +1,5 @@
 'use client';
-import { styled } from '@mui/material/styles';
-import Header from '@mui/material/Header';
-import AppTheme from '@/theme';
 import Slider from '@mui/material/Slider';
-
-const StyledHeader = styled(Header)({
-  backgroundColor: 'blue',
-  color: 'white',
-});
 
 const arr = Array.from({ length: 500 });
 
@@ -19,7 +11,6 @@ export default function Home() {
     <>
     {arr.map((_, index) => (
       <Slider key={index} defaultValue={30} aria-label="Default" valueLabelDisplay="auto" sx={(theme) => ({
-
         color: '#007bff',
         height: 5,
         padding: '15px 0',
